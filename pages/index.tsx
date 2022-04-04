@@ -44,8 +44,8 @@ function BlurImage({ image }: { image: Image }) {
   const [isLoading, setLoading] = useState(true)
 
   return (
-    <a href={image.href} className="group relative">
-      <div className="aspect-square w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-[7/8]">
+    <a href={image.href} className="group">
+      <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-[7/8]">
         <Image
           alt=""
           src={image.imageSrc}
